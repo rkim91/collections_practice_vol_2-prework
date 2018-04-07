@@ -25,10 +25,10 @@ def count_elements(array)
 end
 
 def merge_data(hash1, hash2)
-  # merged_data = []
-  # merged_data << hash1[:keys][0].merge(hash2[:data][0].values[0])
-  # merged_data << hash1[:keys][1].merge(hash2[:data][0].values[1])
-  # return merged_data
+  merged_data = []
+  merged_data << hash1[:keys][0].merge(hash2[:data][0].values[0])
+  merged_data << hash1[:keys][1].merge(hash2[:data][0].values[1])
+  return merged_data
 end
 
 def find_cool(hash)
