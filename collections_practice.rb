@@ -25,5 +25,5 @@ def count_elements(array)
 end
 
 def merge_data(data1, data2)
-  return data1
+  data1[0].values.map.with_index {|v, i| data2[i].merge(v)}
 end
