@@ -25,7 +25,7 @@ def count_elements(array)
 end
 
 def merge_data(v1, v2)
-  v1.map.with_index {|v, i| v2[i].merge(v)}
+  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
 end
 
 def find_cool(hash)
