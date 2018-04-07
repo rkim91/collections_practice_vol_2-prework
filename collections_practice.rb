@@ -29,6 +29,5 @@ def merge_data(v1, v2)
 end
 
 def find_cool(hash)
-  # cool = hash["employee"].select {|k| k["level"] == "2"}
-  return hash.select {|x| x[:temperature] == "cool"}
+  hash.select {|x| x[:temperature] == "cool"}
 end
