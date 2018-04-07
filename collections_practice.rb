@@ -26,7 +26,7 @@ end
 
 def merge_data(hash1, hash2)
   merged_data = []
-  hash1.each do |x|
+  for x in 0...hash1.length
     merged_data << hash1[x].merge(hash2[0].values[x])
   end
   return merged_data
