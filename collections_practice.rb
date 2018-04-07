@@ -31,3 +31,8 @@ end
 def find_cool(hash)
   hash.select {|x| x[:temperature] == "cool"}
 end
+
+def organize_schools(hash)
+  hash.each_with_object({}) do |(name, data), res|
+  (res[data[:location]] ||= []) << name
+end
