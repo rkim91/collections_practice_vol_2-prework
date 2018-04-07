@@ -25,5 +25,5 @@ def count_elements(array)
 end
 
 def merge_data(data1, data2)
-  
+  return data1
 end
