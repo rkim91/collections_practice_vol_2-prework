@@ -23,3 +23,6 @@ end
 def count_elements(array)
   array.group_by(&:itself).map{|k, v| k.merge(count: v.length)}
 end
+
+def merge_data 
+end
