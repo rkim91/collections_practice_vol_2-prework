@@ -4,7 +4,7 @@ def begins_with_r(array)
   end
 end
 
-def contains_a(array)
+def contain_a(array)
   array.select do |word|
     word.include?("a")
   end
