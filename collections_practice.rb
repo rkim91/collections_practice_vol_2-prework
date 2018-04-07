@@ -24,13 +24,23 @@ def count_elements(array)
   array.group_by(&:itself).map{|k, v| k.merge(count: v.length)}
 end
 
+# def merge_data(hash1, hash2)
+#   merged_data = []
+#   for x in 0...hash1.length
+#     merged_data << hash1[x].merge(hash2[0].values[x])
+#   end
+#   merged_data
+# end
+
 def merge_data(hash1, hash2)
   merged_data = []
-  for x in 0...hash1.length
-    merged_data << hash1[x].merge(hash2[0].values[x])
+  hash1.each_with_index do |x|
+    x.each_with_index do |person, index|
+      merged_data << hash1[index].merge(hash2[0].values[index])
+    end
   end
-  merged_data
-end
+  return merged_data
+ end
 
 def find_cool(hash)
   hash.select {|x| x[:temperature] == "cool"}
