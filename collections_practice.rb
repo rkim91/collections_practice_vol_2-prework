@@ -30,11 +30,5 @@ end
 
 def find_cool(hash)
   # cool = hash["employee"].select {|k| k["level"] == "2"}
-  return hash
+  return hash.select {|x| x[:temperature] == "cool"}
 end
-
-
-
-
-
-  
