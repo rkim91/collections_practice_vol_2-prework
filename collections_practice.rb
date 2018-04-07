@@ -34,5 +34,6 @@ end
 
 def organize_schools(hash)
   hash.each_with_object({}) do |(name, data), res|
-  (res[data[:location]] ||= []) << name
+    (res[data[:location]] ||= []) << name
+  end
 end
