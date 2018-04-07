@@ -27,3 +27,8 @@ end
 def merge_data(v1, v2)
   v1.map.with_index {|v, i| v2[i].merge(v)}
 end
+
+def find_cool(hash)
+  # cool = hash["employee"].select {|k| k["level"] == "2"}
+  return hash
+end
